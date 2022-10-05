@@ -1,9 +1,8 @@
 package marsrover;
 
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RoverShould {
     Rover rover;
@@ -15,6 +14,7 @@ class RoverShould {
     }
 
     @Test
+    @Disabled
     void move_to_position_2_3_N() {
         rover = new Rover();
         Assertions.assertThat(rover.execute("MMRMMLM")).isEqualTo("2:3:N");
